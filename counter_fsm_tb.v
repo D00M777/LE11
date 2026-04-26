@@ -34,7 +34,7 @@ end
 // Ones place counter
   state_cntr ones (.clk(clk), .reset(reset), .en(ones_en), .tc(8'd9), .count(ones_cnt), .pulse(ones_pulse));
 
-// Tens place counter (0-3)
+    // Tens place counter (0-5) //originally was 0-3
     state_cntr tens (.clk(clk), .reset(reset), .en(ones_pulse), .tc(8'd5), .count(tens_cnt), .pulse());
 
 initial begin
