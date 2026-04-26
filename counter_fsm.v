@@ -28,6 +28,7 @@ module state_cntr(
 
 reg [7:0] cnt;
 reg [7:0] next_cnt;
+wire ones_en = en && !(tens_cnt == 5 && ones_cnt == 4);
 
 // flip-flops (state memeory)
 always @(posedge clk or posedge reset) begin
